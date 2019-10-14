@@ -11,7 +11,8 @@ RUN npm install
 # copy everything else... which is our application, which may change frequently
 COPY . .
 
-# map localhost:3000 to Docker port 3000
-EXPOSE 3000
+# EXPOSE is to only expose the port for container-to-container communication
+# ie. a Redis docker server needs to expose a port for a docker Node.js client to connect to
+# EXPOSE 3000
 
-CMD ['npm', 'start']
+CMD ["npm", "start"]

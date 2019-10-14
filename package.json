@@ -1,11 +1,14 @@
 {
   "name": "learning-docker",
+  "private": true,
   "version": "1.0.0",
   "description": "Learning docker and Kubernetes - FOR LEARNING ONLY",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -17,5 +20,25 @@
   "bugs": {
     "url": "https://github.com/jackieluc/learning-docker/issues"
   },
-  "homepage": "https://github.com/jackieluc/learning-docker#readme"
+  "homepage": "https://github.com/jackieluc/learning-docker#readme",
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

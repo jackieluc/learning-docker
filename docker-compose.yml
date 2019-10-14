@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - '3000:3000'
+    volumes:
+      - /app/node_modules # do not try to map node_modules to current working directory to Docker's 
+      - .:/app # map local current working directory to Docker's /app, this enables rapid local development of the application without having the need to re-build and re-run the docker container. simply use the docker volume to reference the local file system

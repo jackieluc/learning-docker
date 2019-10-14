@@ -11,5 +11,5 @@ docker build -f Dockerfile.dev -t learning-docker:local .
 # Docker Run
 
 ```sh
-docker run learning-docker:local
+docker run -p 3000:3000 learning-docker:local
 ```
