@@ -20,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/jackieluc/learning-docker/issues"
   },
-  "homepage": "https://github.com/jackieluc/learning-docker#readme",
   "dependencies": {
     "react": "^16.10.2",
     "react-dom": "^16.10.2",

@@ -12,6 +12,9 @@ The goal of this project is to familiarize myself with Docker.
   - [Testing with Docker Compose](#testing-with-docker-compose)
 - [Production](#production)
   - [Multi-step Docker Builds](#multi-step-docker-builds)
+  - [NGINX](#nginx)
+  - [Build](#build)
+  - [Run](#run)
 
 ## Development
 
@@ -58,3 +61,17 @@ docker-compose up
 ### Multi-step Docker Builds
 
 See [Dockerfile](./Dockerfile)
+
+### NGINX
+
+#### Build
+
+```sh
+docker build -t learning-docker:prod .
+```
+
+#### Run
+
+```sh
+docker run -p 3000:80 learning-docker:prod
+```
