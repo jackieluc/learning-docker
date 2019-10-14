@@ -9,6 +9,7 @@ COPY ./package.json .
 RUN npm install
 
 # copy everything else... which is our application, which may change frequently
+# NOTE: even though docker-compose with Docker volumes renders this useless for DEVELOPMENT, we should keep this line here to remind ourselves that we still need to copy the files over if we are not using docker-compose
 COPY . .
 
 # EXPOSE is to only expose the port for container-to-container communication
