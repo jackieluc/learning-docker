@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: client-node-port
+spec:
+  type: NodePort # this is only really good for Development and NOT Production
+  ports:
+    - port: 3050 # other pods can communicate on this port
+      targetPort: 3000 # this will map to the web component's container port
+      nodePort: 31515 # this is the port that we will use in the browser to do development
+  selector:
+    component: web
